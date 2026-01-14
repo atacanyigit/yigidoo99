@@ -49,11 +49,6 @@ a {
 }
 
 
-.hero h1 {
-  font-size: clamp(32px, 6vw, 64px);
-  line-height: 1.1;
-  font-weight: 900;
-}
 
 
 .hero-btn {
@@ -74,6 +69,213 @@ img {
   display: block;
   max-width: 100%;
 }
+
+main {
+  background: #f6f6f6;
+  padding: 48px 16px;
+}
+
+.products,
+.special,
+.campaign,
+.menu-section {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
+
+
+
+.hero-baslik {
+  font-size: clamp(32px, 6vw, 64px);
+  line-height: 1.1;
+  font-weight: 900;
+}
+
+
+.products h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.product-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.product-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.product-card h3 {
+  font-size: 18px;
+}
+
+.product-information {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.ratio {
+  font-weight: 700;
+}
+
+.assess {
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.price {
+  margin-left: auto;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+
+.special,
+.campaign,
+.menu-section {
+  margin-top: 36px;
+  background: var(--white);
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+.special h2,
+.campaign h2,
+.menu-section h2 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.special h3,
+.menu-section h3,
+.campaign p {
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.special button,
+.campaign button {
+  margin-top: 12px;
+  background: var(--red);
+  color: var(--white);
+  border: none;
+  border-radius: 999px;
+  padding: 10px 16px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.special button:hover,
+.campaign button:hover {
+  background: #b82324;
+}
+
+.campaign img {
+  width: 180px;
+  margin: 12px 0;
+}
+
+
+.pill-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.pill-tab {
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 999px;
+  padding: 10px 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.pill-tab:hover {
+  background: var(--yellow);
+  border-color: var(--yellow);
+}
+.footer {
+  margin-top: 48px;
+  padding: 28px 16px;
+  background: #111;
+  color: #fff;
+}
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr 1fr 1fr;
+  gap: 18px;
+}
+
+.footer h2,
+.footer h3 {
+  margin-bottom: 10px;
+}
+
+.footer-mail {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-mail img {
+  width: 18px;
+}
+
+.footer-menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+
+@media (max-width: 900px) {
+  .product-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+  
+
+@media (max-width: 520px) {
+  .product-list {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .campaign img {
+    width: 140px;
+  }
+}
+
+
 
 
 
